@@ -1,0 +1,56 @@
+body {
+    font-family: "Montserrat", sans-serif; 
+}
+h1 { 
+    font-size: 16px;
+    font-weight: 400;
+}
+h2 { 
+    font-size: 56px;
+    font-weight: 400;
+    margin: 12px 0;
+}
+h3 { 
+    font-size: 32px;
+    font-weight: 400;
+}
+h4 { 
+    font-size: 24px;
+    font-weight: 400;
+    margin: 8px 0;
+}
+p {
+    font-size: 16px;
+    line-height: 150%;
+}
+a:hover {
+    text-decoration: underline;
+}
+#main {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: #000000;
+}
+#content {
+    padding: 16px 52px 32px;
+    text-align: left;
+}
+#titles-titles-titles {
+    margin-top: 48px;
+}
+#contact-info {
+    margin-top: 143px;
+}
+#projects-directory {
+    margin-top: 100px;
+}
+#projects-directory h4 {
+    font-weight: 200;
+}
+#about {
+    margin-top: 130px;
+    max-width: 700px;
+}
