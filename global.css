@@ -23,6 +23,9 @@ p {
     font-size: 16px;
     line-height: 150%;
 }
+a {
+    color: #000000;
+}
 a:hover {
     text-decoration: underline;
 }
@@ -35,7 +38,7 @@ a:hover {
     color: #000000;
 }
 #content {
-    padding: 16px 52px 32px;
+    padding: 16px 52px 64px;
     text-align: left;
 }
 #titles-titles-titles {
@@ -44,13 +47,50 @@ a:hover {
 #contact-info {
     margin-top: 143px;
 }
+#contact-info svg {
+    width: 32;
+    height: 32;
+}
+#contact-info a {
+    margin-right: 16px;
+    text-decoration: none;
+    color: #000000;
+}
 #projects-directory {
     margin-top: 100px;
 }
+#projects-directory a {
+    display: block;
+}
 #projects-directory h4 {
     font-weight: 200;
+    display: inline-block;
 }
 #about {
     margin-top: 130px;
     max-width: 700px;
+}
+#about p {
+    line-height: 185%;
+}
+.project-number {
+    margin-right: 175px;
+    width: 100px;
+}
+.two-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-nav {
+    position: fixed;
+    top: 0;
+}
+.right-section {
+    width: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+button {
+    background-color: transparent;
 }
