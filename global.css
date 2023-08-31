@@ -33,6 +33,7 @@ a {
 }
 a:hover {
     text-decoration: underline;
+    font-style: italic;
 }
 #main {
     margin: 0;
@@ -97,5 +98,34 @@ a:hover {
 }
 button {
     background-color: transparent;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    padding: 8px;
+    color: #767676;
+}
+button:hover {
+    color: black;
+    background-color: white;
+    font-style: italic;
+}
+button.active {
+    background-color: white;
+    color: black;
+    pointer-events: none;
+}
+.button-container {
+    border: #767676 1px solid;
+    border-radius: 4px;
+    display: flex;
+}
+.button-container button {
+    flex: 1 1 0;
+}
+.button-yes {
+    border-right: 1px solid #767676;
+    border-radius: 4px 0px 0px 4px;
+}
+.active h5 {
+    font-weight: 700;
 }
