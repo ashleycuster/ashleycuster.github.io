@@ -12,6 +12,16 @@ const toggleActiveButton = (activeButton, inactiveButton) => {
     inactiveButton.classList.remove("active");
     activeButton.classList.add("active");
 };
+const animatePopup = (popupElement) => {
+    popupElement.classList.add("elementToFadeInAndOut");
+    popupElement.setAttribute("aria-hidden", false);
+    // Wait until the animation is over and then remove the class, so that
+    // the next click can re-add it.
+    setTimeout(() => {
+        popupElement.classList.remove("elementToFadeInAndOut");
+        popupElement.setAttribute("aria-hidden", true);
+    }, 8000);
+}
 
 const onProjectsYesClick = (event) => {
     toggleActiveButton(projectsYesButton, projectsNoButton);
@@ -20,7 +30,7 @@ const onProjectsYesClick = (event) => {
 
 const onProjectsNoClick = (event) => {
     toggleActiveButton(projectsNoButton, projectsYesButton);
-    // show popup
+    animatePopup(document.getElementById("question-popup"));
 };
 
 projectsYesButton.addEventListener("click", onProjectsYesClick);
