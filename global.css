@@ -1,0 +1,186 @@
+body {
+    font-family: "Montserrat", sans-serif; 
+}
+.mono-font {
+    font-family: "Azeret Mono", Courier, monospace;
+}
+h1 { 
+    font-size: 16px;
+    font-weight: 400;
+}
+h2 { 
+    font-size: 40px;
+    font-weight: 400;
+    margin: 12px 0;
+    @media (min-width: 1020px) {
+        font-size: 56px;
+    }
+}
+h3 { 
+    font-size: 32px;
+    font-weight: 400;
+}
+h4 { 
+    font-size: 24px;
+    font-weight: 400;
+    margin: 8px 0;
+}
+h5 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+p {
+    font-size: 16px;
+    line-height: 150%;
+}
+a {
+    color: #000000;
+}
+a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+#main {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: #000000;
+}
+#content {
+    padding: 16px 52px 64px;
+    text-align: left;
+    @media (max-width: 500px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+#titles-titles-titles {
+    margin-top: 80px;
+}
+#contact-info {
+    margin-top: 143px;
+}
+#contact-info svg {
+    width: 24;
+    height: 24;
+}
+#contact-info a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #000000;
+}
+#projects-directory {
+    margin-top: 150px;
+}
+.project-item {
+    display: block;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 12px 0;
+    @media (min-width: 695px) {
+        font-size: 24px;
+    }
+}
+.project-item a {
+    border-bottom: 1px solid black;
+}
+.project-item div {
+    font-weight: 200;
+    display: inline-block;
+}
+#about {
+    margin-top: 100px;
+    max-width: 700px;
+}
+#about p {
+    line-height: 185%;
+}
+.project-number {
+    margin-right: 24px;
+    @media (min-width: 695px) {
+        margin-right: 80px;
+    }
+}
+.two-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+.right-section {
+    width: 200px;
+    display: flex;
+    align-items: flex-end;
+    @media only screen and (max-width: 880px) {
+        display: none;
+    }
+}
+button {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 8px;
+    color: #767676;
+}
+button:hover {
+    color: black;
+    background-color: white;
+    font-style: italic;
+}
+button.active {
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    pointer-events: none;
+}
+.button-container {
+    border: #767676 1px solid;
+    border-radius: 4px;
+    display: flex;
+    margin-bottom: 0;
+}
+.button-container button {
+    flex: 1 1 0;
+}
+.button-yes {
+    border-right: 1px solid #767676;
+    border-radius: 4px 0px 0px 4px;
+}
+.active h5 {
+    font-weight: 700;
+}
+.contact-icon-container {
+    display: flex;
+    margin-top: 16px;
+}
+#question-popup {
+    background-color: black;
+    border-radius: 4px;
+    bottom: 0;
+    color: white;
+    left: 50%;
+    padding: 16px;
+    position: absolute;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    opacity: 0;
+}
+.hide {
+    display: none;
+}
+.elementToFadeInAndOut {
+    animation: fadeInOut 8s linear forwards;
+}
+
+@keyframes fadeInOut {
+ 0% { opacity:0; }
+ 20% { opacity:1; }
+ 80% { opacity: 1; }
+ 100% { opacity:0; } 
+}
