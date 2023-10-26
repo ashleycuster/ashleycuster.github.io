@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+  }
+  
+  .sphere {
+    fill: #ffffff;
+  }
+  
+  .country {
+    fill: #d4d4d4;
+    stroke: transparent;
+    stroke-opacity: 0;
+  }
