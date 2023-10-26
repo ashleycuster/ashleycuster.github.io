@@ -1,14 +1,20 @@
 body {
     margin: 0px;
     overflow: hidden;
-  }
-  
-  .sphere {
+}
+
+svg {
+    width: 100%; 
+    height: auto; 
+    height: intrinsic;
+}
+
+.sphere {
     fill: #ffffff;
-  }
-  
-  .country {
+}
+
+.country {
     fill: #d4d4d4;
-    stroke: transparent;
-    stroke-opacity: 0;
-  }
+    stroke: #d4d4d4;
+    stroke-opacity: 1;
+}
