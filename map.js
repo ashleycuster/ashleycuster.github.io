@@ -170,7 +170,11 @@ const renderMap = async () => {
         return;
     });
 
-    const radius = d3.scaleSqrt([minimumPopulation, maximumPopulation], [2, 8]);
+    const radius = d3.scaleSqrt()
+        .domain([minimumPopulation, maximumPopulation])
+        .range([2,10]);
+    
+    console.log(radius(donationData2[0].population));
 
     svg.selectAll("circle")
         .data(donationData2)
@@ -178,7 +182,7 @@ const renderMap = async () => {
         .append("circle")
         .attr("cx", d=>projection([d.lon,d.lat])[0])
         .attr("cy", d=>projection([d.lon,d.lat])[1])
-        .attr("r", d=> 3);
+        .attr("r", d=> radius(d.population));
   }
 
   renderMap();
