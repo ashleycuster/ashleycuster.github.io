@@ -18,3 +18,21 @@ svg {
     stroke: #d4d4d4;
     stroke-opacity: 1;
 }
+
+.charity-header {
+    padding: 24px;
+    @media (min-width: 600px) {
+        position: absolute;
+        top: 200px;
+    }
+}
+
+.donations {
+    fill: red;
+    opacity: 0.7;
+}
+
+.charity {
+    fill: black;
+    opacity: 0.7;
+}
