@@ -14,8 +14,8 @@ svg {
 }
 
 .country {
-    fill: #d4d4d4;
-    stroke: #d4d4d4;
+    fill: #ebebeb;
+    stroke: #ebebeb;
     stroke-opacity: 1;
 }
 
@@ -35,4 +35,9 @@ svg {
 .charity {
     fill: black;
     opacity: 0.7;
+}
+
+.donation-circles {
+    fill: blue;
+    opacity: 0.5;
 }
