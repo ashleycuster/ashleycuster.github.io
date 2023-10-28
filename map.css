@@ -1,11 +1,16 @@
 body {
     margin: 0px;
     overflow: hidden;
+    font-family: "Figtree", sans-serif;
 }
 
-svg {
+h1 {
+    margin: 12px 0;
+}
+
+svg.map {
     width: 100%; 
-    height: auto; 
+    height: 450; 
     height: intrinsic;
 }
 
@@ -52,10 +57,24 @@ svg {
 .tooltip-donation-dot {
     position: absolute;
     display: none;
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
 }
 
 .tooltip-donation-dot.show {
     display: block;
+}
+
+#tooltip-donation-amount {
+    display: flex;
+    margin-top: 8px;
+}
+
+#tooltip-donation-amount-value {
+    margin-right: 4px;
 }
 
 .map-container {
@@ -64,9 +83,20 @@ svg {
 }
 
 .map-legend {
+    display: flex;
     position: absolute;
     bottom: 12px;
     right: 12px;
+}
+
+.map-legend-item {
+    align-items: center;
+    display: flex;
+    margin-left: 8px;
+}
+
+.map-legend-label {
+    margin-left: 4px;
 }
 
 .legend-donation-dot {
@@ -74,4 +104,38 @@ svg {
     width: 10px;
     border-radius: 20px;
     background-color: blue;
+}
+
+.tag {
+    background-color: lightblue;
+    color: blue;
+    font-weight: 700;
+    border-radius: 16px;
+    display: inline-block;
+    padding: 4px 12px;
+}
+
+.tag-content {
+    align-items: center;
+    display: flex;
+}
+
+.tag-content svg {
+    margin-right: 4px;
+    fill: blue;
+}
+
+button.donate-button {
+    background-color: #008748;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    font-family: 'Figtree';
+    font-weight: 600;
+    font-size: 16px;
+}
+
+button.donate-button:hover {
+    background-color: #006e3a;
 }

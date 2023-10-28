@@ -5,21 +5,27 @@
     <link rel="icon" href="/ac-extra-bold.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <div id="main">
         <div class="charity-header">
-            <div>Tag: Humanitarian</div>
+            <div class="tag">
+                <div class="tag-content">
+                    <svg width="14" height="14" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.33976 6.69624C6.76281 6.34126 6.81802 5.71048 6.46302 5.2874C6.10802 4.86433 5.47723 4.80917 5.05419 5.16415C4.63114 5.51912 4.57593 6.14991 4.93093 6.57298C5.28593 6.99605 5.91672 7.05121 6.33976 6.69624Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.29145 13.1257C1.00792 12.7878 0.844094 12.3656 0.82537 11.9249L0.548062 5.39528C0.521774 4.77486 0.785055 4.17745 1.26075 3.7783L4.34812 1.18769C4.82381 0.788534 5.45786 0.63299 6.06429 0.766616L12.4466 2.17357C12.8773 2.26853 13.2646 2.50318 13.5482 2.84108L24.0383 15.3427C24.7483 16.1889 24.638 17.4504 23.7918 18.1604L14.5992 25.8739C13.7531 26.5839 12.4916 26.4735 11.7816 25.6273L1.29145 13.1257ZM12.7821 3.48387L23.2723 15.9855C23.6273 16.4086 23.572 17.0394 23.149 17.3944L13.9565 25.1078C13.5334 25.4628 12.9026 25.4076 12.5476 24.9846L2.05749 12.4829C1.91573 12.3139 1.83377 12.1029 1.82445 11.8825L1.54715 5.35287C1.534 5.04266 1.66564 4.74396 1.90353 4.54434L4.9909 1.95373C5.2288 1.75412 5.54582 1.67634 5.84904 1.74316L12.2313 3.15011C12.4467 3.19755 12.6404 3.31492 12.7821 3.48387Z" fill="currentColor"/>
+                    </svg>
+                    Humanitarian
+                </div>
+            </div>
             <h1>World Peace Institute</h1>
             <button class="donate-button">Donate</button>
         </div>
         <div class="map-container">
-            <svg width="960" height="500" viewBox="0,0,960,500"></svg>
+            <svg class="map" width="960" height="500" viewBox="0,0,960,500"></svg>
             <div id="tooltip-donation-dot" class="tooltip-donation-dot">
                 <div id="tooltip-state-name"></div>
                 <div id="tooltip-donation-amount">
@@ -28,8 +34,18 @@
                 </div>
             </div>
             <div class="map-legend">
-                <div><div></div><div>Charity location</div></div>
-                <div><div class="legend-donation-dot"></div><div>Donations</div></div>
+                <div class="map-legend-item">
+                    <div>
+                        <svg width="20" height="20">       
+                            <image xlink:href="marker.svg" width="20" height="20"/>    
+                        </svg>
+                    </div>
+                    <div class="map-legend-label">Charity location</div>
+                </div>
+                <div class="map-legend-item">
+                    <div class="legend-donation-dot"></div>
+                    <div class="map-legend-label">Donations</div>
+                </div>
             </div>
         </div>
     </div>

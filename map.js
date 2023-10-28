@@ -17,7 +17,7 @@ const renderMap = async () => {
 
 
     const { select, geoPath, geoNaturalEarth1 } = d3;
-    const svg = select('svg');
+    const svg = select('svg.map');
     const projection = geoNaturalEarth1()
         .center([-105,39.5])
         .scale(750);
