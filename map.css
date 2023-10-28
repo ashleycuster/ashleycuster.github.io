@@ -41,3 +41,18 @@ svg {
     fill: blue;
     opacity: 0.5;
 }
+
+.donation-circles:hover {
+    opacity: 1;
+    stroke: lightblue;
+    stroke-width: 3;
+}
+
+.tooltip-donation-dot {
+    position: absolute;
+    display: none;
+}
+
+.tooltip-donation-dot.show {
+    display: block;
+}
