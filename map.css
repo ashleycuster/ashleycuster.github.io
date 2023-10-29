@@ -62,6 +62,7 @@ svg.map {
     color: white;
     padding: 12px;
     border-radius: 8px;
+    z-index: 3;
 }
 
 .tooltip-donation-dot.show {
@@ -134,6 +135,7 @@ button.donate-button {
     font-family: 'Figtree';
     font-weight: 600;
     font-size: 16px;
+    cursor: pointer;
 }
 
 button.donate-button:hover {
