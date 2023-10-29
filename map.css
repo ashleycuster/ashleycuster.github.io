@@ -2,6 +2,7 @@ body {
     margin: 0px;
     overflow: hidden;
     font-family: "Figtree", sans-serif;
+    color: #333333;
 }
 
 h1 {
@@ -19,8 +20,8 @@ svg.map {
 }
 
 .country {
-    fill: #ebebeb;
-    stroke: #ebebeb;
+    fill: #f2f2f2;
+    stroke: #f2f2f2;
     stroke-opacity: 1;
 }
 
@@ -39,18 +40,17 @@ svg.map {
 }
 
 .charity {
-    fill: black;
-    opacity: 0.7;
+    fill: #333333;
 }
 
 .donation-circles {
-    fill: blue;
-    opacity: 0.5;
+    fill: #004480;
+    opacity: 0.8;
 }
 
 .donation-circles:hover {
     opacity: 1;
-    stroke: lightblue;
+    stroke: #D6E4FC;
     stroke-width: 3;
 }
 
@@ -104,12 +104,13 @@ svg.map {
     height: 10px;
     width: 10px;
     border-radius: 20px;
-    background-color: blue;
+    background-color: #004480;
+    opacity: 0.8;
 }
 
 .tag {
-    background-color: lightblue;
-    color: blue;
+    background-color: #D6E4FC;
+    color: #004480;
     font-weight: 700;
     border-radius: 16px;
     display: inline-block;
@@ -122,12 +123,12 @@ svg.map {
 }
 
 .tag-content svg {
-    margin-right: 4px;
-    fill: blue;
+    margin-right: 6px;
+    fill: #004480;
 }
 
 button.donate-button {
-    background-color: #008748;
+    background-color: #004480;
     border-radius: 8px;
     color: #ffffff;
     padding: 12px 20px;
@@ -139,5 +140,89 @@ button.donate-button {
 }
 
 button.donate-button:hover {
-    background-color: #006e3a;
+    background-color: #00294D;
+}
+
+.hide {
+    display: none !important;
+}
+
+.loading-donations {
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    top: 12px;
+    left: 0;
+    right: 0;
+    width: 200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+ 
+
+ @-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.load {
+	width: 100px;
+	height: 100px;
+	margin: 110px auto 0;
+	border:solid 10px #8822aa;
+	border-radius: 50%;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	 -webkit-transition: all 0.5s ease-in;
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         1.0s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+    	
+    	 transition: all 0.5s ease-in;
+    animation-name:             rotate; 
+    animation-duration:         1.0s; 
+    animation-iteration-count:  infinite;
+    animation-timing-function: linear; 
+}
+
+.pulse  {
+	stroke: #ff4f81;
+	animation: pulse2 1.5s ease-in-out 2;
+}
+
+@keyframes pulse2 {
+	0% {
+        stroke-width: 0;
+		stroke-opacity: 0;
+	}
+
+	50% {
+        stroke-width: 5px;
+	    stroke-opacity: 1;
+	}
+
+	100% {
+        stroke-width: 0px;
+	    stroke-opacity: 0;
+    }
 }
