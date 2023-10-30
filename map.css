@@ -1,0 +1,185 @@
+body {
+    color: #333333;
+    font-family: "Figtree", sans-serif;
+    margin: 0px;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 12px 0;
+}
+
+svg.map {
+    height: 300; 
+    height: intrinsic;
+    width: 100%;
+    @media (min-width: 800px) {
+        height: 450;
+    }
+}
+
+.sphere {
+    fill: #ffffff;
+}
+
+.country {
+    fill: #f2f2f2;
+    stroke: #f2f2f2;
+    stroke-opacity: 1;
+}
+
+.charity-header {
+    padding: 24px;
+    z-index: 2;
+    @media (min-width: 800px) {
+        position: absolute;
+        top: 200px;
+    }
+}
+
+.charity {
+    fill: #333333;
+}
+
+.donation-circles {
+    fill: #004480;
+    opacity: 0.8;
+}
+
+.donation-circles:hover {
+    opacity: 1;
+    stroke: #D6E4FC;
+    stroke-width: 3;
+}
+
+.tooltip-donation-dot {
+    background-color: #000000;
+    border-radius: 8px;
+    color: #ffffff;
+    display: none;
+    opacity: 0.85;
+    padding: 12px;
+    position: absolute;
+    z-index: 3;
+}
+
+.tooltip-donation-dot.show {
+    display: block;
+}
+
+#tooltip-donation-amount {
+    display: flex;
+    margin-top: 8px;
+}
+
+#tooltip-donation-amount-value {
+    margin-right: 4px;
+}
+
+.map-container {
+    position: relative;
+    z-index: 1;
+}
+
+.map-legend {
+    bottom: 12px;
+    display: flex;
+    position: absolute;
+    right: 12px;
+}
+
+.map-legend-item {
+    align-items: center;
+    display: flex;
+    margin-left: 8px;
+}
+
+.map-legend-label {
+    margin-left: 4px;
+}
+
+.legend-donation-dot {
+    background-color: #004480;
+    border-radius: 20px;
+    height: 10px;
+    opacity: 0.8;
+    width: 10px;
+}
+
+.tag {
+    background-color: #D6E4FC;
+    border-radius: 16px;
+    color: #004480;
+    display: inline-block;
+    font-weight: 700;
+    padding: 4px 12px;
+}
+
+.tag-content {
+    align-items: center;
+    display: flex;
+}
+
+.tag-content svg {
+    fill: #004480;
+    margin-right: 6px;
+}
+
+button.donate-button {
+    background-color: #004480;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Figtree';
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+}
+
+button.donate-button:hover {
+    background-color: #00294D;
+}
+
+.hide {
+    display: none !important;
+}
+
+.loading-donations {
+    background-color: #000000;
+    border-radius: 8px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin: 0 auto;
+    opacity: 0.85;
+    padding: 12px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 200px;
+    z-index: 3;
+}
+
+.pulse  {
+    animation: pulse2 1.5s ease-in-out 2;
+	stroke: #ff4f81;
+}
+
+@keyframes pulse2 {
+	0% {
+        stroke-width: 0;
+		stroke-opacity: 0;
+	}
+
+	50% {
+        stroke-width: 5px;
+	    stroke-opacity: 1;
+	}
+
+	100% {
+        stroke-width: 0px;
+	    stroke-opacity: 0;
+    }
+}
